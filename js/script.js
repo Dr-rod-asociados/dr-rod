@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener("load", () => {
 
+    setTimeout(() => {
+
         loader.style.opacity = "0";
 
         setTimeout(() => {
@@ -21,7 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         },700);
 
-    });
+    },2000);
+
+});
 
     /*====================================
     HEADER
