@@ -2,7 +2,7 @@
 ESTUDIO ROD & ASOCIADOS
 script.js
 =========================================*/
-alert("El JS está funcionando");
+
 document.addEventListener("DOMContentLoaded", () => {
 
    const loader = document.getElementById("loader");
