@@ -1,0 +1,636 @@
+/* ============================
+   DR. ROD
+   ESTUDIO JURÍDICO
+============================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#0f0f0f;
+    color:#f2f2f2;
+
+    font-family:'Montserrat',sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+/*================ NAVBAR =================*/
+
+header{
+
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index:999;
+
+    background:rgba(0,0,0,.85);
+
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid rgba(212,175,55,.25);
+
+}
+
+.navbar{
+
+    width:90%;
+    max-width:1400px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:85px;
+
+}
+
+.logo{
+
+    font-family:'Cinzel',serif;
+
+    color:#D4AF37;
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    letter-spacing:4px;
+
+}
+
+.navbar ul{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+.navbar li{
+
+    margin-left:40px;
+
+}
+
+.navbar a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:.95rem;
+
+    letter-spacing:1px;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.navbar a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#D4AF37;
+
+    transition:.4s;
+
+}
+
+.navbar a:hover{
+
+    color:#D4AF37;
+
+}
+
+.navbar a:hover::after{
+
+    width:100%;
+
+}
+
+/*================ HERO =================*/
+
+.hero{
+
+    height:100vh;
+
+    background:url("../img/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+}
+
+.overlay{
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.72);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.overlay h1{
+
+    font-family:'Cinzel',serif;
+
+    font-size:5rem;
+
+    color:#D4AF37;
+
+    letter-spacing:8px;
+
+    margin-bottom:20px;
+
+}
+
+.overlay h2{
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+
+}
+
+.overlay p{
+
+    width:700px;
+    max-width:95%;
+
+    line-height:1.8;
+
+    color:#ddd;
+
+    margin-bottom:45px;
+
+}
+
+/*================ BOTONES =================*/
+
+.btn{
+
+    background:#D4AF37;
+
+    color:black;
+
+    padding:16px 40px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    border-radius:4px;
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    background:#f2ce63;
+
+    transform:translateY(-3px);
+
+}
+
+/*================ SECCIONES =================*/
+
+section{
+
+    padding:110px 8%;
+
+}
+
+.container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:60px;
+
+}
+
+.about-image{
+
+    flex:1;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:8px;
+
+    border:3px solid #D4AF37;
+
+}
+
+.about-text{
+
+    flex:1;
+
+}
+
+.about-text h2{
+
+    font-family:'Cinzel';
+
+    color:#D4AF37;
+
+    margin-bottom:30px;
+
+    font-size:2.2rem;
+
+}
+
+.about-text p{
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+
+    color:#ddd;
+
+}
+
+/*================ TITULOS =================*/
+
+.titulo{
+
+    text-align:center;
+
+    color:#D4AF37;
+
+    font-family:'Cinzel';
+
+    font-size:2.5rem;
+
+    margin-bottom:60px;
+
+}
+
+/*================ CARDS =================*/
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:35px;
+
+}
+
+.card{
+
+    background:#171717;
+
+    padding:40px;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:8px;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#D4AF37;
+
+    box-shadow:0 0 25px rgba(212,175,55,.15);
+
+}
+
+.card i{
+
+    font-size:42px;
+
+    color:#D4AF37;
+
+    margin-bottom:25px;
+
+}
+
+.card h3{
+
+    margin-bottom:18px;
+
+    font-size:1.3rem;
+
+}
+
+.card p{
+
+    color:#ccc;
+
+    line-height:1.8;
+
+}
+
+/*================ CTA =================*/
+
+.cta{
+
+    text-align:center;
+
+    background:#111;
+
+}
+
+.cta h2{
+
+    font-family:'Cinzel';
+
+    color:#D4AF37;
+
+    font-size:2.5rem;
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    margin-bottom:45px;
+
+    color:#ddd;
+
+}
+
+/*================ CONTACTO =================*/
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+    margin-bottom:60px;
+
+}
+
+.contact-card{
+
+    background:#171717;
+
+    padding:45px;
+
+    text-align:center;
+
+    border-radius:8px;
+
+    transition:.35s;
+
+}
+
+.contact-card:hover{
+
+    border:1px solid #D4AF37;
+
+}
+
+.contact-card i{
+
+    font-size:45px;
+
+    color:#D4AF37;
+
+    margin-bottom:20px;
+
+}
+
+.contact-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.contact-card p{
+
+    color:#ddd;
+
+}
+
+/*================ MAPA =================*/
+
+.mapa iframe{
+
+    width:100%;
+
+    height:420px;
+
+    border:0;
+
+    border-radius:10px;
+
+}
+
+/*================ FOOTER =================*/
+
+footer{
+
+    background:black;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(212,175,55,.25);
+
+}
+
+footer p{
+
+    color:#aaa;
+
+}
+
+/*================ WHATSAPP =================*/
+
+.whatsapp{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:32px;
+
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+
+    transition:.3s;
+
+}
+
+.whatsapp:hover{
+
+    transform:scale(1.1);
+
+}
+
+/*================ RESPONSIVE =================*/
+
+@media(max-width:980px){
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.overlay h1{
+
+    font-size:3rem;
+
+}
+
+.overlay h2{
+
+    font-size:1.5rem;
+
+}
+
+.navbar{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+.navbar ul{
+
+    margin-top:20px;
+
+}
+
+.navbar li{
+
+    margin:10px;
+
+}
+
+section{
+
+    padding:80px 6%;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.logo{
+
+    font-size:1.6rem;
+
+}
+
+.overlay h1{
+
+    font-size:2.4rem;
+
+}
+
+.overlay h2{
+
+    font-size:1.2rem;
+
+}
+
+.overlay p{
+
+    font-size:.95rem;
+
+}
+
+.card{
+
+    padding:30px;
+
+}
+
+.contact-card{
+
+    padding:30px;
+
+}
+
+.btn{
+
+    padding:14px 25px;
+
+}
+
+}
