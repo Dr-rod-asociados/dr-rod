@@ -5,15 +5,13 @@ script.js
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    /*====================================
-    LOADER
-    ====================================*/
+   const loader = document.getElementById("loader");
 
-    const loader = document.getElementById("loader");
-
-    window.addEventListener("load", () => {
+window.addEventListener("load", () => {
 
     setTimeout(() => {
+
+        loader.style.transition = "opacity 1s";
 
         loader.style.opacity = "0";
 
@@ -21,12 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             loader.style.display = "none";
 
-        },50000);
+        },1000);
 
-    },50000);
+    },3000);
 
 });
-
     /*====================================
     HEADER
     ====================================*/
