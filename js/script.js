@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             loader.style.display = "none";
 
-        },2000);
+        },5000);
 
-    },2000);
+    },5000);
 
 });
 
