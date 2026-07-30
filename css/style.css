@@ -2272,5 +2272,22 @@ POR QUÉ ELEGIRNOS
     }
 
 }
+    
+/* ======================================
+   MÓVILES
+====================================== */
+
+@media (max-width: 768px) {
+
+    .about-image,
+    .why-image,
+    .hero-image,
+    .service-image,
+    .contact-image,
+    .section-image {
+        display: none !important;
+    }
+
+}
 
 }
